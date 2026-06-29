@@ -1,33 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fire Force</title>
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Bem-vindo ao meu site sobre HTML5 e CSS3</h1>
+    <p>O HTML5 e CSS3 são tecnologias importantes para o desenvolvimento web moderno.</p>
+     <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-        <nav class="navegacao">
-            <ul class="menu">
-                <li><a href="index.html" class="menu-link">Home</a></li>
-                <li><a href="sobre.html" class="menu-link">Sobre</a></li>
-                <li><a href="projetos.html" class="menu-link">Projetos</a></li>
-                <li><a href="contato.html" class="menu-link ">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Fire Force</h1>
 
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Fire_Force%2C_Volume_1.jpg/250px-Fire_Force%2C_Volume_1.jpg" alt="Fire Force Volume 1" width="300" height="400">
-      
-      <h2>Este site será dedicado ao conteúdo do anime Fire Force</h2>
-    <p>Fire Force é um anime de ação e aventura que se passa em um mundo onde as pessoas podem se transformar em chamas vivas. A história segue um grupo de bombeiros especiais que lutam contra essas chamas e tentam descobrir a verdade por trás do fenômeno.</p>
-    <a href="https://en.wikipedia.org/wiki/Fire_Force" target="_blank"> Wiki sobre o Fire Force</a>
-    
-<footer>
-    <p>&copy; 2026 Anime. Todos os direitos reservados.</p>
-</footer>
+<h1>Atividades de JavaScript</h1>
+
+<section>
+
+<h2>1 - Cadastro</h2>
+
+<input type="text" id="nome" placeholder="Nome">
+<input type="number" id="idade" placeholder="Idade">
+<input type="number" id="media" placeholder="Média">
+
+<button onclick="cadastrar()">Cadastrar</button>
+<button onclick="ordenar()">Ordenar Nomes</button>
+
+<table>
+
+<thead>
+<tr>
+<th>Nome</th>
+<th>Idade</th>
+<th>Média</th>
+<th>Maior de 18</th>
+</tr>
+</thead>
+
+<tbody id="tabela"></tbody>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>2 - Split()</h2>
+
+<input type="text" id="listaNomes" placeholder="Ana,João,Carlos">
+
+<button onclick="processarSplit()">Processar</button>
+
+<div id="splitResultado"></div>
+
+</section>
+
+<section>
+
+<h2>3 - Tipos de Dados</h2>
+
+<input type="text" id="tipo">
+
+<button onclick="verificarTipo()">Verificar</button>
+
+<p id="tipoResultado"></p>
+
+</section>
+
+<section>
+
+<h2>4 - Switch</h2>
+
+<select id="dia">
+
+<option value="1">Segunda</option>
+<option value="2">Terça</option>
+<option value="3">Quarta</option>
+<option value="4">Quinta</option>
+<option value="5">Sexta</option>
+
+</select>
+
+<button onclick="switchDia()">Mostrar</button>
+
+<p id="diaResultado"></p>
+
+</section>
+
+<section>
+
+<h2>5 - Boca de Urna</h2>
+
+<button onclick="bocaUrna()">Iniciar</button>
+
+<p id="urna"></p>
+
+</section>
+
+<section>
+
+<h2>6 - Mini Calculadora</h2>
+
+<input type="number" id="n1">
+<input type="number" id="n2">
+
+<button onclick="calcular('+')">+</button>
+<button onclick="calcular('-')">-</button>
+<button onclick="calcular('*')">*</button>
+<button onclick="calcular('/')">/</button>
+
+<p id="resultadoCalc"></p>
+
+</section>
+
+<section>
+
+<h2>7 - Sistema de Notas</h2>
+
+<input type="number" id="nota">
+
+<button onclick="verNota()">Verificar</button>
+
+<p id="resultadoNota"></p>
+
+</section>
+
+<section>
+
+<h2>8 - Eventos</h2>
+
+<button onclick="trocarCor()">Trocar Cor</button>
+
+<button onclick="trocarImagem()">Trocar Imagem</button>
+
+<button onclick="mostrarData()">Mostrar Data</button>
+
+<button onclick="esconderTexto()">Esconder Texto</button>
+
+<p id="texto">Este texto pode desaparecer.</p>
+
+<img id="imagem" src="https://picsum.photos/250" alt="Imagem">
+
+<p id="data"></p>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
